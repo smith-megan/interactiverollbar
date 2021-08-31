@@ -7,6 +7,6 @@ app.get('/', (req, res)=>{
 res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
-const PORT=4545
+const port=process.env.PORT || 4545
 
-app.listen(PORT, ()=> console.log(`take us to a port of ${PORT}`))
+app.listen(port, ()=> console.log(`take us to a port of ${port}`))
