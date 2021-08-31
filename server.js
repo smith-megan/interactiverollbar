@@ -4,6 +4,8 @@ const Rollbar = require('rollbar')
 
 const app = express()
 
+app.use(express.json())
+
 let students=[]
 
 // include and initialize the rollbar library with your access token
