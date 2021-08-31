@@ -23,7 +23,7 @@ res.sendFile(path.join(__dirname, 'public/index.html'))
 rollbar.info('html file served successfully.')
 })
 
-app.post('/api/student', (req,res)=>{
+app.post('/api/student', (req, res)=>{
   let {name} = req.body
   name=name.trim()
 
