@@ -24,8 +24,9 @@
                 .then(res => {
                   container.innerHTML = ''
                   nameInput.value = ''
+
                   res.data.forEach(studentName => {
-                    container.innterHTML += `<p>${studentName}</p>`
+                    container.innerHTML += `<p>${studentName}</p>`
                   })
                 })
                 .catch(err => {
