@@ -11,7 +11,7 @@ app.use(rollbar.errorHandler())
 
 // include and initialize the rollbar library with your access token
 var rollbar = new Rollbar({
-  accessToken: 'b43daee42b9e4c018bd73fec6e40b308',
+  accessToken: '5520cd4cf12a4fe48fa8a32e60b9ee10',
   captureUncaught: true,
   captureUnhandledRejections: true
 });
