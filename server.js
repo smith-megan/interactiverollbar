@@ -32,10 +32,13 @@ app.post('/api/student', (req, res)=>{
 
   if(index === -1 && name !== ''){
       students.push(name)
+      rollbar.log('student added successfully', {author: 'Scott'})
       res.status(200).send(students)
   } else if (name === ''){
+      rollbar.error('no name given', {author: 'megan'})
       res.status(400).send('must provide a name.')
   } else {
+      rollbar.error('student already exists', {author: 'megan'})
       res.status(400).send('that student already exists')
   }
 
